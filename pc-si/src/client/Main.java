@@ -38,7 +38,6 @@ public class Main {
        god2Request.setRoles(roles);
        god2Request.setOfferId(new Long("4000706239"));
       JAXBElement< GetOfferDetailsResponse2> response= got2Service.getOD2(god2JAXB);
-     //  System.out.println( response.getOffer().getBrand() );
       GetOfferDetailsResponse2 res =response.getValue();
       System.out.println( res.getOffer().getBrand() );       
        
